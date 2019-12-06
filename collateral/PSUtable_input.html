@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset='utf-8' />
+      <title>PSU Sponsors</title>
+      <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
+<style>
+
+  @font-face {
+font-family: 'DrukText';
+src: url('../fonts/Druk-Medium-Web.woff');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: 'DrukText';
+src: url('../fonts/Druk-MediumItalic-Web.woff');
+font-weight: 500;
+font-style: italic;
+}
+@font-face {
+font-family: 'DrukText';
+src: url('../fonts/Druk-Bold-Web.woff');
+font-weight: 700;
+font-style: normal;
+}
+@font-face {
+font-family: 'DrukText';
+src: url('../fonts/Druk-BoldItalic-Web.woff');
+font-weight: 700;
+font-style: italic;
+}
+@font-face {
+font-family: 'PortraitText';
+src: url('../fonts/Portrait-Regular-Web.woff');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: 'PortraitText';
+src: url('../fonts/Portrait-RegularItalic-Web.woff');
+font-weight: 400;
+font-style: italic;
+}
+@font-face {
+font-family: 'PortraitText';
+src: url('../fonts/Portrait-Medium-Web.woff');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: 'PortraitText';
+src: url('../fonts/Portrait-MediumItalic-Web.woff');
+font-weight: 500;
+font-style: italic;
+}
+
+
+        table.sortable thead {
+            background-color:#eee;
+            color:#000000;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: default;
+        }
+        table.sortable {
+      		font-size: 12px;
+      		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      	}
+        table.sortable {border-spacing: 0}
+        table.sortable td, th {padding: 0 0.3em}
+        tr:nth-child(even) {background: #e6e6e6}
+        tr:nth-child(odd) {background: #FFF}
+      </style>
+  </head>
+
+  <body>
+
+
+<table id="filter" class="sortable">
+
+<!–– add your tableizer data below this line, removing table class=tableizer-table and tr class=tableizer-firstrow ––>
+
+REPLACE_ME
+
+
+<!–– add your tableizer data above this line––>
+
+    <script src="./tablefilter/tablefilter.js"></script>
+
+<script>
+var filtersConfig = {
+    base_path: 'tablefilter/',
+    auto_filter: true,
+    auto_filter_delay: 1100, //milliseconds
+    filters_row_index: 1,
+    state: true,
+    alternate_rows: true,
+    rows_counter: true,
+    btn_reset: true,
+    status_bar: true,
+    msg_filter: 'Filtering...'
+};
+var tf = new TableFilter('filter', filtersConfig);
+tf.init();
+</script>
+
+</body>
+</html>
